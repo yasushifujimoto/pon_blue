@@ -9,4 +9,12 @@
   <body>
     <h1>すごい地図</h1>
   </body>
+  <div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoieWFzdXNoaWZ1amltb3RvIiwiYSI6ImNqdmR0YmFmdjJjOHo0NG50OHFkdjl0cnIifQ.NkVr6N-TAO3ik0ZmBEwf0Q';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11'
+});
+</script>
 </html>
