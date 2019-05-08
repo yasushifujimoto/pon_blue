@@ -19,5 +19,16 @@ center: [139.807,35.595],
 zoom: 12,
 style: 'mapbox://styles/yasushifujimoto/cjvej7bzkbrc71fpax4dxctfk'
 });
+  // Navigation Control
+map.addControl(
+ new mapboxgl.NavigationControl(), 'top-left'
+);
+// Geolocation Control
+map.addControl(new mapboxgl.GeolocateControl({
+  positionOptions: {
+    enableHighAccuracy: true
+  },
+  trackUserLocation: true
+}));
 </script>
 </html>
